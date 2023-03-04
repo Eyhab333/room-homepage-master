@@ -167,6 +167,7 @@ ul {
     display: none;
   }
   header .logo {
+    z-index: 99;
     height: 13.0559997559px;
     width: 61.7159996033px;
     left: 64px;
@@ -174,6 +175,7 @@ ul {
     position: absolute;
   }
   header nav {
+    z-index: 99;
     position: absolute;
     height: 15px;
     width: 244px;

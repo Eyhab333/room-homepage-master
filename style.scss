@@ -194,11 +194,12 @@ ul {
 /*############ for-tablet-portrait-up ##############*/
 @media (min-width: 600px) {
   header {
+    
     .icon-hamburger {
       display: none;
     }
 
-    .logo {
+    .logo {z-index: 99;
       height: 13.055999755859375px;
       width: 61.715999603271484px;
       left: 64px;
@@ -206,7 +207,7 @@ ul {
       position: absolute;
     }
 
-    nav {
+    nav {z-index: 99;
       position: absolute;
       height: 15px;
       width: 244px;
