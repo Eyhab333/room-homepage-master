@@ -71,6 +71,10 @@ ul {
 
 /*##### for-phone-only ##########*/
 @media (max-width: 599px) {
+  nav,
+  .navigate {
+    display: none;
+  }
   header .icon-hamburger {
     height: 14px;
     width: 20px;
@@ -104,9 +108,8 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    /* or 138% */
     letter-spacing: -0.333333px;
-    color: #A0A0A0;
+    color: #a0a0a0;
     margin-bottom: 41px;
   }
   main .hero .text .link-and-arrow {
@@ -117,7 +120,6 @@ ul {
     font-weight: 500;
     font-size: 15px;
     line-height: 16px;
-    /* identical to box height, or 107% */
     letter-spacing: 12.5px;
     color: #000000;
   }
@@ -143,7 +145,6 @@ ul {
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
-    /* identical to box height, or 157% */
     text-align: justify;
     letter-spacing: 5.83333px;
     color: #000000;
@@ -153,15 +154,131 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    /* or 138% */
     letter-spacing: -0.333333px;
-    color: #A0A0A0;
+    color: #a0a0a0;
   }
   main .about .image-two {
     margin-top: 41px;
   }
 }
 /*############ for-tablet-portrait-up ##############*/
+@media (min-width: 600px) {
+  header .icon-hamburger {
+    display: none;
+  }
+  header .logo {
+    height: 13.0559997559px;
+    width: 61.7159996033px;
+    left: 64px;
+    top: 64px;
+    position: absolute;
+  }
+  header nav {
+    position: absolute;
+    height: 15px;
+    width: 244px;
+    left: 182px;
+    top: 60px;
+  }
+  header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  header nav ul li + li {
+    margin-left: 31px;
+  }
+  header nav ul a {
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.666667px;
+    color: #ffffff;
+  }
+  main .hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  main .hero .text {
+    padding: 0px 90px 0px 100px;
+    max-width: 600px;
+  }
+  main .hero .text .navigate {
+    position: absolute;
+    height: 80px;
+    width: 160px;
+    bottom: 0;
+    left: 787px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  main .hero .text .navigate .left,
+  main .hero .text .navigate .right {
+    height: 24px;
+    width: 12px;
+  }
+  main .hero .text h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 44px;
+    letter-spacing: -1.66667px;
+    color: #000000;
+    margin-bottom: 18px;
+  }
+  main .hero .text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.333333px;
+    color: #a0a0a0;
+    margin-bottom: 26px;
+  }
+  main .hero .text .link-and-arrow {
+    display: flex;
+    align-items: center;
+  }
+  main .hero .text .link-and-arrow a {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 12.5px;
+    color: #000000;
+  }
+  main .hero .text .link-and-arrow .arrow {
+    height: 12px;
+    width: 40px;
+    left: 192px;
+    top: 2px;
+    border-radius: 0px;
+    margin-left: 10px;
+  }
+  main .about {
+    display: flex;
+    align-items: center;
+  }
+  main .about .text {
+    width: 580px;
+    padding: 0px 48px 0px 48px;
+  }
+  main .about .text h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    letter-spacing: 5.83333px;
+    color: #000000;
+    margin-bottom: 15px;
+  }
+  main .about .text p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.333333px;
+    color: #a0a0a0;
+  }
+}
 /*############ for-tablet-landscape-up #############*/
 /*############ for-desktop-up ###########*/
 /*############ for-big-desktop-up ##########*//*# sourceMappingURL=style.css.map */
